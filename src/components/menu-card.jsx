@@ -7,7 +7,8 @@ export default function MenuCard({ name }) {
     <div
       className="
         min-w-[80px] sm:min-w-[100px] h-[80px] sm:h-[100px] rounded-md m-1
-        hover:bg-gray-100 cursor-pointer
+        bg-gray-100
+        hover:bg-gray-200 cursor-pointer
         flex justify-center items-center
         text-base sm:text-2xl
         transition
