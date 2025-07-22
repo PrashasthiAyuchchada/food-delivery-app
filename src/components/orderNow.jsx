@@ -4,30 +4,42 @@ import React from 'react';
 
 function OrderNow() {
   return (
-    <div className="w-full h-full backdrop-brightness-50 flex flex-col items-center justify-center      ">
-        <div className=" h-full w-[500px]  flex flex-col items-center justify-center      "       >
-                
-                <div className=' m-4 '>
-                    <h1 className=' text-4xl font-bold text-white'>
-                        Order food to your office
-                    </h1>
-                </div>
-                <div className='m-2  '>
-                    <input  type='address' placeholder='Enter your delivery address to start ordering'  className='w-[400px] h-[40px]  justify-center text-xs bg-white border border-black rounded-md      '  />
-                </div>
-                <div className=' w-[400px]   flex justify-between  m-2   '>
-                    <input type='time'         className='w-[190px] h-[40px] bg-white border border-black rounded-md      '  />
-                    <input type='date'     className='w-[190px] h-[40px]   bg-white border border-black rounded-md      '  />
-                </div>
-                <div className='w-[400px] flex justify-center   '  >
-                    <span className='text-sm text-white '>Orders must be placed 24 hours in advance</span>
-                </div>
-                <button className=' w-[100px] h-[40px] m-2  bg-white rounded-md border border-black text-xs             '> 
-                    Order now
-                </button>
-        </div>
+    <div className="w-full max-w-lg px-4 py-6 bg-black/50 rounded-md text-white backdrop-blur-sm shadow-lg">
+      {/* Heading */}
+      <h1 className="text-2xl sm:text-3xl font-bold mb-4 text-center">
+        Order food to your office
+      </h1>
 
+      {/* Address Input */}
+      <input
+        type="text"
+        placeholder="Enter your delivery address to start ordering"
+        className="w-full h-10 px-3 mb-4 text-sm text-black rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+      />
 
+      {/* Time and Date Inputs */}
+      <div className="flex flex-col sm:flex-row gap-3 mb-4">
+        <input
+          type="time"
+          className="flex-1 h-10 px-3 text-black rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+        />
+        <input
+          type="date"
+          className="flex-1 h-10 px-3 text-black rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+        />
+      </div>
+
+      {/* Notice */}
+      <p className="text-xs text-center mb-4">
+        Orders must be placed 24 hours in advance
+      </p>
+
+      {/* Button */}
+      <div className="flex justify-center">
+        <button className="bg-white text-black px-6 py-2 text-sm font-semibold rounded-md hover:bg-yellow-400 transition">
+          Order Now
+        </button>
+      </div>
     </div>
   );
 }
