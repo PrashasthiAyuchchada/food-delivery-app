@@ -10,7 +10,7 @@ function Hero() {
       <div className="absolute inset-0 bg-black/30" />
 
       {/* Content */}
-      <div className="relative z-10 flex items-center justify-center h-full px-4 text-center">
+      <div className="relative z-10  flex items-center justify-center h-full px-4 text-center">
         <OrderNow />
       </div>
     </div>
